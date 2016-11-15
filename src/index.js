@@ -212,6 +212,182 @@ var questions = [
             "fortuitous"
         ]
     },
+    {
+        "uproar; noise": [
+            "tumult",
+            "sanctimonious",
+            "preclude",
+            "ossify"
+        ]
+    },
+    {
+        "turn to bone": [
+            "ossify",
+            "impoverished",
+            "exonerates",
+            "lukewarm"
+        ]
+    },
+    {
+        "right or privilege": [
+            "prerogative",
+            "savant",
+            "maelstrom",
+            "palatable"
+        ]
+    },
+    {
+        "famous": [
+            "preeminent",
+            "sardonic",
+            "unalloyed",
+            "amorphous"
+        ]
+    },
+    {
+        "cheerful": [
+            "sanguine",
+            "overt",
+            "preeminent",
+            "amorphous"
+        ]
+    },
+    {
+        "novice; beginner": [
+            "tyro",
+            "exorcism",
+            "sanguine",
+            "sardonic"
+        ]
+    },
+    {
+        "hypocritically holy": [
+            "sanctimonious",
+            "ossify",
+            "jubilation",
+            "fortuitous"
+        ]
+    },
+    {
+        "emphasize": [
+            "underscore",
+            "ossify",
+            "jubilation",
+            "tyro"
+        ]
+    },
+    {
+        "lack of government": [
+            "anarchy",
+            "oligarchy",
+            "theocracy",
+            "plutocracy"
+        ]
+    },
+    {
+        "procession of vehicles": [
+            "cavalcade",
+            "unctuous",
+            "savant",
+            "amorphous"
+        ]
+    },
+    {
+        "sharpness of mind": [
+            "acumen",
+            "foster",
+            "incoherence",
+            "indiscriminate"
+        ]
+    },
+    {
+        "encourage": [
+            "foster",
+            "inane",
+            "lucid",
+            "ornate"
+        ]
+    },
+    {
+        "selfish": [
+            "egotistical",
+            "epitome",
+            "effacement",
+            "nefarious"
+        ]
+    },
+    {
+        "dull; unoriginal": [
+            "banal",
+            "axiom",
+            "bellicose",
+            "abashed"
+        ]
+    },
+    {
+        "a horn filled with fruits": [
+            "cornucopia",
+            "convivial",
+            "antipodes",
+            "assuage"
+        ]
+    },
+    {
+        "average": [
+            "mediocre",
+            "levity",
+            "docile",
+            "equivocal"
+        ]
+    },
+    {
+        "undecided": [
+            "ambivalent",
+            "cryptic",
+            "deft",
+            "chicanery"
+        ]
+    },
+    {
+        "easily angered": [
+            "irascible",
+            "ineffable",
+            "incorrigible",
+            "implacable"
+        ]
+    },
+    {
+        "lack of energy": [
+            "lassitude",
+            "lament",
+            "languid",
+            "ephemeral"
+        ]
+    },
+    {
+        "firm and strong": [
+            "robust",
+            "skeptical",
+            "mollified",
+            "provocative"
+        ]
+    },
+    {
+        "thorough; eager": [
+            "sedulous",
+            "remiss",
+            "rhetoric",
+            "futile"
+        ]
+    },
+    {
+        "seeking revenge": [
+            "vindictive",
+            "vacillated",
+            "judicious",
+            "legitimate"
+        ]
+    },
 ];
 
 // Route the incoming request based on type (LaunchRequest, IntentRequest,
@@ -351,7 +527,7 @@ function getWelcomeResponse(callback) {
 
         currentQuestionIndex = 0,
         spokenQuestion = Object.keys(questions[gameQuestions[currentQuestionIndex]])[0],
-        repromptText = "Question 1. " + spokenQuestion + " ",
+        repromptText = "Question 1. " + spokenQuestion + " .",
 
         i, j;
 
